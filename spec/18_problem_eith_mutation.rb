@@ -1,11 +1,4 @@
-class Card
-  attr_reader :rank, :suite
-  def initialize(rank, suite)
-    @rank = rank
-    @suite = suite
-  end
-end
-
+require_relative '../Card'
 
 RSpec.describe Card do
   def card
