@@ -1,8 +1,17 @@
 RSpec.describe Array do
-  it 'should start empty' do
-    expect(subject.length).to eq(0)
-    subject.push'some value'
-    expect(subject.length).to eq(1)
+  subject(:sally) do
+    [a: 2, v: 5]
+  end
+  it 'should have length 2' do
+    expect(subject.length).to eq(2)
+    subject.pop
+  end
 
+  it 'should have length 1' do
+    expect(subject.length).to eq(1)
+  end
+
+  it 'should have length 2' do
+    expect(subject.length).to eq(2)
   end
 end
