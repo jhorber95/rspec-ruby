@@ -15,3 +15,14 @@ RSpec.describe Array do
     expect(subject.length).to eq(2)
   end
 end
+
+RSpec.describe Array do
+  subject do
+    [1, 2]
+  end
+  it 'should length equal two' do
+    expect(subject).to eq([1, 2])
+  end
+
+  it {  is_expected.to eq([1, 2]) }
+end
