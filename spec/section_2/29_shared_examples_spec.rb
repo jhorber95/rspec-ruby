@@ -16,7 +16,7 @@ end
 
 
 RSpec.describe Hash do
-  subject { {a: 1, b: 2, c: 3} }
+  subject { { a: 1, b: 2, c: 3 } }
   include_examples ' a ruby object with three elements'
 
 end
